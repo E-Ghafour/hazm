@@ -105,7 +105,7 @@ class WordEmbedding:
 
         print("Model trained.")
 
-        if dest_path is not None:
+        if dest_path != None:
             model.save_model(dest_path)
             print("Model saved.")
 
@@ -261,7 +261,7 @@ class SentEmbedding:
 
         print("Model trained.")
 
-        if dest_path is not None:
+        if dest_path != None:
             model.save(dest_path)
             print("Model saved.")
 
