@@ -182,7 +182,7 @@ def coarse_pos_e(tags, word):
                 "INT",
                 "RES",
             }
-        )[0] + ("e" if "EZ" in tags else "")
+        )[0] + (",EZ" if "EZ" in tags else "")
     except:
         return "N"
 
