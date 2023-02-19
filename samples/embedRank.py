@@ -106,7 +106,7 @@ def embedRank(text, keyword_num):
     token_tag = posTagger(text)
     candidates = extractCandidates(token_tag)
     return extractKeyword(candidates, keyword_num)
-    
+
 
 if __name__ == '__main__':
     persikaReader = PersicaReader('persika.csv')
