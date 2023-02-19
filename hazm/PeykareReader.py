@@ -146,8 +146,8 @@ def coarse_pos_u(tags, word):
         if old_pos == "CONJ" and word in sconj_list:
             return "SCONJ"
         if old_pos == "NUM" and word in num_adj_list:
-            return "ADJ"
-        return map_pos_to_upos[old_pos]
+            return "ADJ" + (",EZ" if "EZ" in tags else "")
+        return map_pos_to_upos[old_pos] + (",EZ" if "EZ" in tags else "")
     except:
         return "NOUN"
 
